@@ -23,6 +23,10 @@ module.exports = {
 	userDataDir: path.join(__dirname, "users"),
 	coreKeysDir: path.join(__dirname, "core_keys"),
 
+	serverKeyFile: path.join(__dirname, "server_keys/key.pem"),
+	serverKeyPassFile: null,
+	serverKeyPassEnvVar: null,
+
 	coreRequestTimeout: 30000,
 	isCoreOnlineTimeout: 2000,
 
