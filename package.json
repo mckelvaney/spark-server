@@ -14,7 +14,7 @@
 		"url": "https://www.spark.io/"
 	},
 	"dependencies": {
-		"spark-protocol": "mckelvaney/spark-protocol",
+		"spark-protocol": "git+https://github.com/mckelvaney/spark-protocol.git",
 		"express": "~3.4.4",
 		"hogan-express": "~0.5.1",
 		"request": "*",
