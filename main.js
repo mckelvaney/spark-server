@@ -103,7 +103,11 @@ http.createServer(app).listen(node_port);
 
 var DeviceServer = require("spark-protocol").DeviceServer;
 var server = new DeviceServer({
-	coreKeysDir: settings.coreKeysDir
+	coreKeysDir: settings.coreKeysDir,
+
+	serverKeyFile: settings.serverKeyFile,
+	serverKeyPassFile: settings.serverKeyPassFile,
+	serverKeyPassEnvVar: settings.serverKeyPassEnvVar
 });
 global.server = server;
 server.start();
@@ -113,4 +117,3 @@ var ips = utilities.getIPAddresses();
 for(var i=0;i<ips.length;i++) {
 	console.log("Your server IP address is: " + ips[i]);
 }
-
